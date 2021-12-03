@@ -366,7 +366,7 @@
                         <div class="contact_inputs grid">
                             <div class="contact_content">
                                 <label for="name" class="contact_label">Name</label>
-                                <input type="text" id="name" class="contact_input" name="name">
+                                <input type="text" id="name" class="contact_input" name="name" required>
                             </div>
                             <div class="contact_content">
                                 <label for="email" class="contact_label">Email</label>
@@ -378,7 +378,7 @@
                             </div>
 
                             <div>
-                                <button type="submit" href="#" class="button button-flex">
+                                <button type="submit"  class="button button-flex">
                                     Send Message
                                     <i class="uil uil-message button_icon"></i>
                                 </button>
@@ -387,18 +387,50 @@
                     </form>
                 </div>
                 
-                <div id="status" class="error" >Success</div>
+                <div id="status" class="success"></div>
             </section>
         </main>
 
         <!--==================== FOOTER ====================-->
         <footer class="footer">
+            <div class="footer_bg">
+                <div class="footer_container container grid">
+                    <div>
+                        <h1 class="footer_title">Romel</h1>
+                        <span class="footer_subtitle">Aspiring developer</span>
+                    </div>
 
+                    <ul class="footer_links">
+                        <li>
+                            <a href="#portfolio" class="footer_link">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="footer_link">Contactme</a>
+                        </li>
+                    </ul>
+
+                    <div class="footer_socials">
+                        <a href="https://www.facebook.com/acopra.romel" target="_blank" class="footer_social">
+                            <i class="uil uil-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/_tow_tow/" target="_blank" class="footer_social">
+                            <i class="uil uil-instagram"></i>
+                        </a>
+                        <a href="https://mobile.twitter.com/AcopraRomel" target="_blank" class="footer_social">
+                            <i class="uil uil-twitter-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <p class="footer_copy">&#169; Bedimcode. All right reserved</p>
+            </div>
             
         </footer>
         
         <!--==================== SCROLL TOP ====================-->
-        
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class="uil uil-arrow-up scrolltop_icon"></i>
+        </a>
 
         <!--==================== SWIPER JS ====================-->
         <script src="assets/js/swiper-bundle.min.js"></script>
