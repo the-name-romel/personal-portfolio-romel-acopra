@@ -305,8 +305,22 @@ img{
 .home_data{
     grid-column: 1/3;
 }
-
-.home_title{
+.home_data .home_intro{
+    font-size: 20px;
+}
+.home_data .home_title{
+    font-size: 40px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home_data .home_subtitle{
+    font-size: 35px;
+    margin-bottom: var(--mb-2);
+}
+.home_data .home_subtitle span{
+    color: var(--first-color);
+}
+/* .home_title{
     font-size: var(--big-font-size);
 }
 
@@ -319,7 +333,7 @@ img{
 
 .home_description{
     margin-bottom: var(--mb-2);
-}
+} */
 
 .home_scroll{
     display: none;
@@ -742,8 +756,20 @@ p.portfolio_description{
     .home_content{
         grid-template-columns: .25fr 3fr;
     }
+
     .home_blob{
         width: 180px;
+    }
+    .home_data .home_intro{
+        font-size: 15px;
+    }
+    .home_data .home_title{
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .home_data .home_subtitle{
+        font-size: 20px;
+        margin-bottom: .5rem;
     }
 
     .skills_title{
@@ -753,6 +779,22 @@ p.portfolio_description{
     .project_img{
         width: 200px;
     }
+}
+
+@media screen and (min-width: 351px){
+    .home_data .home_intro{
+        font-size: 18px;
+    }
+    .home_data .home_title{
+        font-size: 28px;
+        font-weight: 600;
+        margin-left: -3px;
+    }
+    .home_data .home_subtitle{
+        font-size: 23px;
+        margin-bottom: .5rem;
+    }
+    
 }
 
 /* For medium devices */
@@ -767,6 +809,19 @@ p.portfolio_description{
         order: 1;
         justify-self: center;
     }
+    .home_data .home_intro{
+        font-size: 18px;
+    }
+    .home_data .home_title{
+        font-size: 28px;
+        font-weight: 600;
+        margin-left: -3px;
+    }
+    .home_data .home_subtitle{
+        font-size: 23px;
+        margin-bottom: .5rem;
+    }
+    
 
     .about_container,
     .portfolio_content,
@@ -914,6 +969,18 @@ p.portfolio_description{
     .home_social{
         transform: translateX(-6rem);
     }
+    .home_data .home_intro{
+        font-size: 20px;
+    }
+    .home_data .home_title{
+        font-size: 40px;
+        font-weight: 600;
+        margin-left: -3px;
+    }
+    .home_data .home_subtitle{
+        font-size: 32px;
+    }
+    
     
     .portfolio_content{
         column-gap: 5rem;
@@ -933,5 +1000,19 @@ p.portfolio_description{
 
     .contact_form{
         width: 460px;
+    }
+}
+
+@media screen and (min-width: 769px){
+    .home_data .home_intro{
+        font-size: 20px;
+    }
+    .home_data .home_title{
+        font-size: 40px;
+        font-weight: 600;
+        margin-left: -3px;
+    }
+    .home_data .home_subtitle{
+        font-size: 35px;
     }
 }

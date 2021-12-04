@@ -19,6 +19,14 @@ if(navClose){
     })
 }
 
+/*==================== TYPING ANIMATION ====================*/
+let typed = new Typed(".typing", {
+  strings: ["Student", "Developer", "Explorer", "Learner"],
+  typeSpeed: 100,
+  backSpeed: 60,
+  loop: true
+});
+
 /*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll('.nav_link')
 
